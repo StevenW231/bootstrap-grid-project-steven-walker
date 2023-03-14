@@ -1,0 +1,76 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  background-color: #51ABFF;
+}
+
+h1 {
+  padding-top: 10px;
+  margin-left: 40px;
+}
+
+
+i {
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.fa-user {
+  padding-left: 850px;
+}
+
+.d-flex {
+  width: 625px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  margin-left: 35px;
+}
+
+.row {
+  height: 100vh;
+}
+
+.first-col {
+  background-color: #969595;
+}
+
+.second-col {
+  background-color: #DDDCDC;
+}
+
+.third-col {
+  background-color: #ffffff;
+}
+
+.list-group {
+  color: white;
+  font-size: 40px;
+  padding-top: 10px;
+}
+
+.card-body {
+  background-color: #DDDCDC;
+  
+}
+
+.date-time {
+  float: right;
+}
+
+.form-group {
+  padding-top: 70px;
+}
+
+.to-from {
+  margin-top: 20px;
+}
+
+.text-group {
+  margin-top: 100px;
+  line-height: 75px;
+}
+
+.btn {
+  margin-top: 20px;
+}
