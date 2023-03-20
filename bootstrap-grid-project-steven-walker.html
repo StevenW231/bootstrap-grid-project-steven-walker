@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="bootstrap-grid-project-steven-walker.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  
+  <link rel="stylesheet" href="bootstrap-grid-project-steven-walker.css">
+
   <title>Bootstrap-Grid-Project</title>
 </head>
 <body>
@@ -15,21 +15,29 @@
    
     <div class="header">
       
-      <i class="fa-solid fa-envelope fa-5x"></i>
+     <div class="col-sm-6 d-block d-md-none menu-icon">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+     </div>
 
-      <h1 style="display: inline;">Funmail</h1>
-
-      <!-- search bar -->
-    <form class="d-flex" role="search">
+      <div class="icon col-lg-2 col-md-5 ">
+        <i class="fa-solid fa-envelope d-none d-md-block"></i>
+      <h1 class="d-none d-md-block">Funmail</h1>
+    </div>
+     
+    <!-- search bar -->
+    <form class="d-flex d-none d-md-block col-lg-4 col-md-4" role="search">
       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
     </form>
 
+    <div class="user col-lg-6 col-md-3 col-sm-6">
     <i id= "fa-user" class="fa-solid fa-user fa-5x"></i>
+    </div>
 
    </div>
-    
    <!-- Column 1 -->
-    <div class="col d-none d-sm-block col-md-5 col-lg-2 first-col">
+    <div class="col d-none d-md-block col-md-5 col-lg-2 first-col">
       <button type="button" class="btn btn-primary btn-lg">Compose</button> <!-- Compose button -->
       <ul class="list-group">
         <li>Inbox</li>
@@ -47,75 +55,79 @@
       <div class="card email-card">
         <div class="card-body">
           <div class="date-time">Mar 10th, 2023</div>
-          <h5>Subject</h5>
-          <p>Preview Message</p>
+          <h5>Humor That Works</h5>
+          <p>Joke of the Day</p>
         </div>
       </div>
 
       <div class="card email-card">
         <div class="card-body">
           <div class="date-time">Mar 10th, 2023</div>
-          <h5>Subject</h5>
-          <p>Preview Message</p>
+          <h5>Amazon</h5>
+          <p>Your Order Has Been Delivered</p>
         </div>
       </div>
 
       <div class="card email-card">
         <div class="card-body">
           <div class="date-time">Mar 10th, 2023</div>
-          <h5>Subject</h5>
-          <p>Preview Message</p>
+          <h5>Bing</h5>
+          <p>Download the latest version of Bing Now!</p>
         </div>
       </div>
 
       <div class="card email-card">
         <div class="card-body">
           <div class="date-time">Mar 10th, 2023</div>
-          <h5>Subject</h5>
-          <p>Preview Message</p>
+          <h5>Apple</h5>
+          <p>Thank You For Your Payment</p>
         </div>
       </div>
 
       <div class="card email-card">
         <div class="card-body">
           <div class="date-time">Mar 10th, 2023</div>
-          <h5>Subject</h5>
-          <p>Preview Message</p>
+          <h5>AT&T</h5>
+          <p>Ready To Pre-Order The New iphone 15?</p>
         </div>
       </div>
 
       <div class="card email-card">
         <div class="card-body">
           <div class="date-time">Mar 10th, 2023</div>
-          <h5>Subject</h5>
-          <p>Preview Message</p>
+          <h5>DoorDash</h5>
+          <p>$0 Delivery Fees Are Here!</p>
         </div>
       </div>
 
       <div class="card email-card">
         <div class="card-body">
           <div class="date-time">Mar 10th, 2023</div>
-          <h5>Subject</h5>
-          <p>Preview Message</p>
+          <h5>Chase</h5>
+          <p>Your Statement is Ready</p>
         </div>
       </div>
 
       <div class="card email-card">
         <div class="card-body">
           <div class="date-time">Mar 10th, 2023</div>
-          <h5>Subject</h5>
-          <p>Preview Message</p>
+          <h5>Netflix</h5>
+          <p>Start Watching New Season of YOU Now</p>
         </div>
       </div>
 
       <div class="card email-card">
         <div class="card-body">
           <div class="date-time">Mar 10th, 2023</div>
-          <h5>Subject</h5>
-          <p>Preview Message</p>
+          <h5>Target</h5>
+          <p>All New Summer Collection!</p>
         </div>
       </div> 
 
+    </div>
+
+    <div class="compose d-block d-md-none">
+      <button type="button" class="btn btn-primary btn-lg">Compose</button>
     </div>
 
     <!-- Column 3 -->
@@ -124,17 +136,17 @@
       <!-- "to and from" Form -->
       <div class="to-from">
         <p class="to">To: Steven.Walker@funmail.com</p>
-        <p class="from">From: Anonymous.User@funmail.com</p> 
+        <p class="from">From: Humor THAT Works</p> 
       <!-- </div> End of "to and from" Form -->
       
 
       <div class="text-group">
         <div>
-          <h3>Subject</h3>
+          <h3>Joke of the Day</h3>
         </div>
       
         <div>
-        <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="lorem">(This was ranked #1): A woman gets on a bus with her baby. The bus driver says: “Ugh, that's the ugliest baby I've ever seen!” The woman walks to the rear of the bus and sits down, fuming. She says to a man next to her: “The driver just insulted me!” The man says: “You go up there and tell him off. Go on, I'll hold your monkey for you.”</p>
       </div>
     </div>
       <!-- Form for reply section -->
